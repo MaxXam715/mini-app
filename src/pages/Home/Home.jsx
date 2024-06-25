@@ -14,8 +14,20 @@ export function HomePage() {
                 <button type="button" className="btn btn-item active">Все профессии</button>
             </div>
 
-            <div className="ascac">
+            <div className="list-professions">
+                <div className="profession-item">
+                    <div className="icon-container">
+                        <img src="/src/assets/img/profession/profession-1.svg" className="ascac"/>
+                    </div>
+                    <div className="main-info">
+                        <div className="entry-threshold">
+                            <span className="title">Entry threshold</span>
+                        </div>
+                    </div>
+                    <div className="action-container">
 
+                    </div>
+                </div>
             </div>
 
             <NavBar />

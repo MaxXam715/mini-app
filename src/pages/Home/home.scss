@@ -23,3 +23,82 @@
     }
   }
 }
+
+.list-professions {
+  display: flex;
+  flex-direction: column;
+  grid-row-gap: 8px;
+
+  .profession-item {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 91px;
+    padding: 10px;
+    border-radius: 23px;
+    border: 2px solid #0047FF;
+    backdrop-filter: blur(32px);
+    overflow: hidden;
+
+    > * {
+      position: relative;
+      z-index: 3;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(0deg, rgba(0, 82, 139, 0.13) 0%, rgba(0, 82, 139, 0.13) 100%), linear-gradient(180deg, rgba(48, 27, 83, 0.50) -24.57%, rgba(130, 116, 163, 0.50) 100%);
+      filter: blur(25px);
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 2;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(182.68% 133.03% at 0% 2.35%, rgba(139, 3, 93, 0.15) 0%, rgba(78, 0, 180, 0.15) 100%), radial-gradient(183.16% 132.16% at 96.51% 2.01%, rgba(1, 8, 70, 0.40) 0%, rgba(63, 0, 237, 0.40) 100%);
+      backdrop-filter: blur(15px);
+    }
+
+    .icon-container {
+      aspect-ratio: 1 / 1;
+      height: 100%;
+      margin-right: 12px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+
+    .main-info {
+      .entry-threshold {
+        .title {
+          background: var(--Professional-Title-Gradient-6, linear-gradient(90deg, #A580FF 0%, #FFF 100%));
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+
+          leading-trim: both;
+          text-edge: cap;
+          font-size: 11px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 145%;
+          letter-spacing: -0.1px;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}
