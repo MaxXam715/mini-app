@@ -2,7 +2,9 @@ import * as ReactDOM from "react-dom/client";
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
 
 import {App} from "./App.jsx";
-import {HomePage} from "./pages/Home/Home";
+import HomePage from "./pages/Home/Home";
+import Profession from "./pages/Profession/Profession";
+import ProfessionList from "./pages/Profession/ProfessionList";
 
 const router = createBrowserRouter([
     {
@@ -10,8 +12,14 @@ const router = createBrowserRouter([
         element: <App />,
         children: [
             {
-                index: true, element: <HomePage />,
+                element: <HomePage />, index: true
             },
+            {
+                element: <Profession />, path: "/profession-empty",
+            },
+            {
+                element: <ProfessionList />, path: "/profession-list",
+            }
         ],
     },
 ]);

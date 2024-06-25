@@ -1,0 +1,48 @@
+.G-alert {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 8px;
+  border-radius: 18px;
+
+  .icon {
+    font-size: 24px;
+    margin-right: 8px;
+  }
+
+  .title {
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 138%;
+    letter-spacing: -0.08px;
+  }
+
+  &.success {
+    background: rgba(0, 206, 93, 0.10);
+    background-blend-mode: luminosity;
+    backdrop-filter: blur(18px);
+
+    .icon {
+      background: var(--Color-styles-Green);
+    }
+
+    .title {
+      color: var(--Color-styles-Green);
+    }
+  }
+
+  &.error {
+    border-radius: 18px;
+    background: var(--color-styles-red-10, rgba(255, 98, 126, 0.10));
+    backdrop-filter: blur(17.5px);
+
+    .icon {
+      background: var(--color-styles-red-100);
+    }
+
+    .title {
+      color: var(--color-styles-red-100);
+    }
+  }
+}

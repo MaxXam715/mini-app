@@ -1,3 +1,6 @@
 :root {
-    --Color-styles-Primary: #1A063B
+    --Color-styles-Primary: #1A063B;
+    --Color-styles-White: #FFF;
+    --Color-styles-Green: #00CE5D;
+    --color-styles-red-100: #FF3434;
 }

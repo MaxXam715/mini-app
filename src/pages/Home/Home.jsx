@@ -1,8 +1,9 @@
 import { useEffect } from "react";
 import NavBar from "../../components/NavBar/NavBar.jsx";
 import "./home.scss";
+import {Link} from "react-router-dom";
 
-export function HomePage() {
+export default function HomePage() {
     useEffect(() => {document.title = 'Home'}, []);
 
     console.log("home")
@@ -15,7 +16,7 @@ export function HomePage() {
             </div>
 
             <div className="list-professions">
-                <div className="profession-item">
+                <Link to="/profession-empty" className="profession-item">
                     <div className="icon-container">
                         <img src="/src/assets/img/profession/profession-1.svg" className="ascac"/>
                     </div>
@@ -27,7 +28,7 @@ export function HomePage() {
                     <div className="action-container">
 
                     </div>
-                </div>
+                </Link>
             </div>
 
             <NavBar />
