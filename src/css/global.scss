@@ -1,0 +1,17 @@
+@import "./fonts";
+@import "./uikit";
+@import "./variables.css";
+@import "./reset.css";
+
+body {
+    font-family: "Inter";
+    margin: 0;
+    padding: 0;
+    background-color: #0C0419;
+    color: #fff;
+}
+
+#root {
+    padding-left: 12px;
+    padding-right: 12px;
+}
